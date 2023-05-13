@@ -1,0 +1,209 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+
+.main {
+    width: 80%;
+    /* border: 1px solid; */
+    height: 30rem;
+    margin: auto;
+    margin-top: 3rem;
+}
+
+.login,
+.signup {
+    width: 49.5%;
+    height: 100%;
+    /* border: 1px solid blue; */
+    display: inline-block;
+    overflow: hidden;
+    box-shadow: 0px 0px 5px silver;
+}
+
+.login {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-right: 3px ridge whitesmoke;
+}
+
+.signup {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-left: 3px groove black;
+
+}
+
+.color {
+    background-color: rgba(255, 0, 0, 0.7);
+    width: 29.8rem;
+    height: 30rem;
+    z-index: -1000;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.color2 {
+    background-color: rgba(255, 0, 0, 0.7);
+    width: 29.78rem;
+    height: 30rem;
+    z-index: -1000;
+    position: absolute;
+    top: 3rem;
+    left: -40rem;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.login .color {
+    position: absolute;
+    top: 3rem;
+    left: -40rem;
+}
+
+.login:hover .color {
+    /* left: 8rem; */
+    animation: rtol .5s ease-out;
+    animation-fill-mode: both;
+}
+
+@keyframes rtol {
+    0% {
+        left: 38rem;
+    }
+
+    100% {
+        left: 8rem;
+    }
+}
+
+.signup:hover .color2 {
+    /* left: 8rem; */
+    animation: ltor .5s ease-in;
+    animation-fill-mode: both;
+}
+
+@keyframes ltor {
+    0% {
+        left: 8rem;
+    }
+
+    100% {
+        left: 38.2rem;
+    }
+}
+
+.logbtn,
+.signbtn {
+    width: 8rem;
+    height: 2.5rem;
+    margin: auto auto;
+    /* border: 2px solid black; */
+}
+
+.logbtn input,
+.signbtn input {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 0, 0, 0.7);
+    border: 2px groove black;
+    font-size: 1.2rem;
+    color: black;
+    transition: all .5s linear;
+    margin-top: 150%;
+}
+
+.login:hover .logbtn input,
+.signup:hover .signbtn input {
+    background-color: black;
+    color: whitesmoke;
+}
+
+.signform,
+.logform {
+    width: 50rem;
+    height: 22rem;
+    /* border: 2px solid; */
+    display: none;
+    position: relative;
+    /* border: 2px solid; */
+    margin: auto;
+    overflow: hidden;
+    left: -132px;
+    width: 25rem;
+    top: 20px;
+}
+
+.signup:hover .signform {
+    display: block;
+}
+
+.login:hover .logform {
+    display: block;
+}
+
+
+.login:hover .logbtn input {
+    margin-top: 30%;
+}
+
+.signup:hover .signbtn input[type="submit"] {
+    margin-top: 30%;
+}
+
+.login:hover .logform {
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: ztof .8s linear;
+}
+
+.signup:hover .signform {
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: ztof .8s linear;
+}
+
+@keyframes ztof {
+    0% {
+        height: 0%;
+    }
+
+    100% {
+        height: 22rem;
+    }
+}
+
+.subbtn:hover {
+    background-color: white;
+    cursor: pointer;
+    border: none;
+}
+
+.subbtn {
+    border-radius: 3px;
+}
+
+fieldset {
+    width: 99%;
+    height: 22rem;
+    border-radius: 6px;
+    border: 2px ridge black;
+
+}
+
+legend {
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-weight: 700;
+}
+
+.signform input {
+    width: initial;
+    height: initial;
+    font-size: initial;
+    padding: 0px;
+    border-radius: 6px;
+    margin: 3px 2px;
+    margin-top: none;
+}
+
+.signform div {
+    display: inline-block;
+}

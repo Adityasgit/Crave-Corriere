@@ -1,0 +1,17 @@
+.resturantsall .flexmax::-webkit-scrollbar{
+height: 5px;
+overflow: hidden;
+}
+.resturantsall .flexmax::-webkit-scrollbar-track{
+    background-color: rgb(254, 238, 238);
+    
+}
+.resturantsall .flexmax::-webkit-scrollbar-thumb{
+    background-color: red;
+    background-blend-mode: color-burn;
+    opacity: 0.6;
+}
+
+.play{
+    background-color: rgb(53, 50, 50);
+}
